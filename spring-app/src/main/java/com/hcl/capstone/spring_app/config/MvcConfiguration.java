@@ -1,5 +1,7 @@
 package com.hcl.capstone.spring_app.config;
 
+import java.io.IOException;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,23 +12,21 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages="com.hcl.capstone.spring_app")
+@ComponentScan(basePackages = "com.hcl.capstone.spring_app")
 @EnableWebMvc
-public class MvcConfiguration extends WebMvcConfigurerAdapter{
+public class MvcConfiguration extends WebMvcConfigurerAdapter {
 
 	@Bean
-	public ViewResolver getViewResolver(){
+	public ViewResolver getViewResolver() throws IOException {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
-		//resolver.setViewNames(new String[]{"new"});
 		return resolver;
 	}
-	
+
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	}
 
-	
 }
