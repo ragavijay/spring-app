@@ -8,8 +8,8 @@
 </head>
 <body>
  <body>
-        <h1>Hello World!</h1>
-        <p>This is the new jsp file ver 1.1</p>
+        <h1>Spring Application</h1>
+        <p>JUnit integrated Ver 1.2 </p>
     </body>
 </body>
 </html>
