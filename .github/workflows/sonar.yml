@@ -27,7 +27,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.m2
-          key: 'spring-app/pom.xml'
+          key: 'pom.xml'
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
