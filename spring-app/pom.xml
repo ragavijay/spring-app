@@ -9,7 +9,7 @@
 
 	<name>spring-app</name>
 	<url>http://maven.apache.org</url>
-
+	<!-- 
 	<properties>
 		<java.version>1.8</java.version>
 		<spring.version>3.1.0.RELEASE</spring.version>
@@ -17,6 +17,15 @@
 		<sonar.projectKey>ragavijay_spring-app</sonar.projectKey>
   		<sonar.organization>ragavijay</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>  -->
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring.version>3.1.0.RELEASE</spring.version>
+		<cglib.version>2.2.2</cglib.version>
+		<sonar.projectKey>spring-app</sonar.projectKey>
+  		<sonar.organization>ragavijay</sonar.organization>
+  		<sonar.login>d9836d14c618001310d920da36f64b3ebfcbd72d</sonar.login>
 	</properties>
 
 	<dependencies>
