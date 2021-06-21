@@ -25,7 +25,7 @@
 		<cglib.version>2.2.2</cglib.version>
 		<sonar.projectKey>spring-app</sonar.projectKey>
   		<sonar.organization>ragavijay</sonar.organization>
-  		<sonar.login>d9836d14c618001310d920da36f64b3ebfcbd72d</sonar.login>
+  		<sonar.login>d6065ce70dde3b3bbb0f48c856db2e3195fcba1c</sonar.login>
 	</properties>
 
 	<dependencies>
